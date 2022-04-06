@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "bruteforce",
+    "password": "bruteforce",
+    "database": "bruteforce",
+    "host": "bruteforce.cmsmu5km6vlg.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "bruteforce",
+    "password": "bruteforce",
+    "database": "bruteforce",
+    "host": "bruteforce.cmsmu5km6vlg.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "logging": false
+  }
+}
