@@ -1,171 +1,46 @@
-//import express module
-var express = require("express");
-//create an express app
-var app = express();
-//require express middleware body-parser
-var bodyParser = require("body-parser");
-//require express session
-var session = require("express-session");
-var cookieParser = require("cookie-parser");
-const req = require("express/lib/request");
+require('dotenv').config()
+const cors = require('cors');
+const express = require('express');
 
-//set the view engine to ejs
-app.set("view engine", "ejs");
-//set the directory of views
-app.set("views", "./views");
-//specify the path of static directory
-app.use(express.static(__dirname + "/public"));
+const authMiddleware = require('./src/api/v1/middlewares/auth.middleware');
 
-//use body parser to parse JSON and urlencoded request bodies
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-//use cookie parser to parse request headers
-app.use(cookieParser());
-//use session to store user data between HTTP requests
-app.use(
-  session({
-    secret: "cmpe_273_secure_string",
-    resave: false,
-    saveUninitialized: true,
-  })
-);
+const app = express();
 
-const isAuth = (req, res, next) => {
-  console.log(req.session.isAuth + " checking isAuth");
-  if (req.session.isAuth) {
-    next();
-  } else {
-    res.redirect("/login");
-  }
-};
+const authRouter = require("./src/api/v1/routers/auth.router");
+const hotelsRouter = require("./src/api/v1/routers/hotels.router");
+const roomsRouter = require("./src/api/v1/routers/rooms.router");
 
-//Only user allowed is admin
-var Users = [
-  {
-    username: "admin",
-    password: "admin",
-  },
-];
-//By Default we have 3 books
-var books = [
-  { BookID: "1", Title: "Book 1", Author: "Author 1" },
-  { BookID: "2", Title: "Book 2", Author: "Author 2" },
-  { BookID: "3", Title: "Book 3", Author: "Author 3" },
-];
+/**
+ * Middlewares
+ */
+app.use(cors());
+// parse requests of content-type - application/json
+app.use(express.json());
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
 
-//route to root
-app.get("/", function (req, res) {
-  console.log(!req.session.user + " checking user in localhost");
-  if (!req.session.user) {
-    res.render("login");
-  } else {
-    res.render("home");
-  }
-});
-
-app.post("/login", function (req, res) {
-  if (req.session.user) {
-    res.render("/login");
-  } else {
-    console.log("Req Body : ", req.body);
-    Users.filter((user) => {
-      if (user.username === req.body.username && user.password === req.body.password)
-         {
-        req.session.user = user;
-        req.session.isAuth = true;
-        console.log(req.session.user + "checking in login");
-        res.redirect("/home");
-      } else {
-        let loginErrorMsg = "Invalid Credentials";
-        res.render("login", { error: loginErrorMsg });
-      }
-    });
-  }
-});
-
-app.get("/login", function (req, res) {
-  console.log(!req.session.user + " checking user in login get");
-  if (!req.session.user) {
-    res.redirect("/");
-  } else {
-    res.redirect("/home");
-  }
-});
-
-app.get("/home", isAuth, function (req, res) {
-  // console.log(req.session.user + " checking in home");
-  console.log(!req.session.user + " checking in home boolean");
-  if (!req.session.user) {
-    res.redirect("/");
-  } else {
-    console.log("Session data : ", req.session);
-    res.render("home", {
-      books: books,
-    });
-  }
-});
-
-app.post("/logout", function (req, res) {
-  req.session.destroy((err) => {
-    if (err) throw err;
-    res.redirect("/");
+/**
+ * Routes
+ */
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Server on',
   });
 });
 
-app.get("/create", function (req, res) {
-  console.log(req.session.user + " checking user in create");
-  if (!req.session.user) {
-    res.redirect("/");
-  } else {
-    res.render("create");
-  }
-});
 
-app.post("/create", function (req, res) {
-  // add your code
-  console.log("Response Body: ", req.body);
-  let idExist = books.some((book) => book.BookID === req.body.BookID);
-  if (idExist) {
-    let errorMsg = `Book Id ${req.body.BookID} already exist`;
-    res.render("create", {
-      error: errorMsg,
-    });
-  } else {
-    books.push(req.body);
-    console.log("--" + req.session.user);
-    res.redirect("/home");
-  }
-});
+app.use('/api/v1/auth', authRouter);
 
-app.get("/delete", function (req, res) {
-  console.log("Session Data : ", req.session.user);
-  if (!req.session.user) {
-    res.redirect("/");
-  } else {
-    res.render("delete");
-  }
-});
+app.use(authMiddleware);
 
-app.post("/delete", function (req, res) {
-  // add your code here
-  let idExist = books.some((book) => book.BookID === req.body.BookID);
-  if (idExist) {
-    for(let i=0;i<books.length;i++)
-    {
-      if(books[i].BookID==req.body.BookID){
-        books.splice(i,1); 
-        break;
-      }
-      
-    }
-    res.redirect("/home");
-  } else {
-    console.log(`Book id ${req.body.BookID} doesn't exist`);
-    let deleteErrorMsg = `Book Id ${req.body.BookID} doesn't exist`;
-    res.render("delete", { error: deleteErrorMsg });
-  }
-});
+app.use('/api/v1/hotels', hotelsRouter);
 
-var server = app.listen(3000, function () {
-  console.log("Server listening on port 3000");
+app.use('/api/v1/rooms', roomsRouter);
+
+/**
+ * App listen
+ */
+app.listen(process.env.API_PORT || 5000, () => {
+  console.log(`App server now listening on port ${process.env.API_PORT || 5000}`);
 });
