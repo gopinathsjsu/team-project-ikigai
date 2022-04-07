@@ -2,13 +2,13 @@ require('dotenv').config()
 const cors = require('cors');
 const express = require('express');
 
-const authMiddleware = require('./src/api/middlewares/auth.middleware');
+const authMiddleware = require('./api/middlewares/auth.middleware');
 
 const app = express();
 
-const authRouter = require("./src/api/routers/auth.router");
-const hotelsRouter = require("./src/api/routers/hotels.router");
-const roomsRouter = require("./src/api/routers/rooms.router");
+const authRouter = require("./api/routers/auth.router");
+const hotelsRouter = require("./api/routers/hotels.router");
+const roomsRouter = require("./api/routers/rooms.router");
 
 /**
  * Middlewares

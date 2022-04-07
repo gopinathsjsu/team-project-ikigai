@@ -9,6 +9,6 @@ authRouter.post("/sign-in", AuthController.signin);
 
 authRouter.post("/sign-out", AuthController.signOut);
 
-authRouter.post("/sign-out", AuthController.signOut);
+//authRouter.post("/sign-out", AuthController.signOut);
 
 module.exports = authRouter;

@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "ikigai",
+    "password": "ikigai123",
+    "database": "database-1",
+    "host": "database-1.ciswmfyawe4r.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "ikigai",
+    "password": "ikigai123",
+    "database": "database-1",
+    "host": "database-1.ciswmfyawe4r.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres",
+    "logging": false
+  }
+}
