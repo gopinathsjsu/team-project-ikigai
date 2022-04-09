@@ -45,6 +45,7 @@ class HotelsController {
             res.status(400).send({success:false, message})
         }
     }
+    //Search hotel APi
     static async searchHotels (req, res) {
         try {
             const body = req.body;
