@@ -28,7 +28,7 @@ class AuthController {
 
   static signOut = async (req, res) => {
     try {
-      // Cleanup in case of sign out, if needed
+      
       res.status(200).send({
         data: {
           message: "Logged out successfully!",
