@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: #212529scale;
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  background-color: #212529 !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-brand {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.smallimg {
+  height: 200px;
+  width: 100% !important;
+  border-radius: 5px !important;
+}
+
+h1 {
+  font-size: 20px !important;
+}
+
+.btn {
+  background-color: #212529 !important;
+  color: white !important;
+  box-shadow: none !important;
+  font-size: 20px;
+  font-weight: 500;
+  /* border: 2px solid #414040; */
+  border-radius: 50px;
+}
+.btn:hover{
+  background-color: white !important;
+  color: black !important;
+
+}
+
+.fliteredData {
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  /* margin-top: 50px !important; */
+  border-radius: 5px !important;
+  padding: 100px !important;
+  /* background-color: #f8f9fa !important;
+  border-top: 50px solid #5C5E60; */
+  position: absolute;
+  top: 150px;
+  z-index: 3;
+  margin-right:200px;
+}
+
+.fliteredData > div >label {
+
+  font-size: 25px;
+    font-weight: 500;
+}
+.bs {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px !important;
+  border-radius: 5px !important;
+  padding: 40px !important;
+  background-color: #f8f9fa !important;
+  margin: 20px;
+  height: 330px;
+  cursor: pointer;
+}
+
+.bs:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+}
+
+
+
+.bsBookingScreen {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px !important;
+  border-radius: 5px !important;
+  padding: 40px !important;
+  background-color: #f8f9fa !important;
+  margin: 20px;
+  height: 610px;
+  cursor: pointer;
+}
+
+.bsBookingScreen:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+}
+
+.registerScreen{
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-marina-pools-7900-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   /* black color: #212529; */
+}
+
+.loginScreen{
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-sangam-lobby-8097-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   /* black color: #212529; */
+}
+.mt-5, .my-5 {
+  margin-top: 0rem!important;
+  margin-bottom: 6rem!important;
+}
+.bsLogin{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px !important;
+  border-radius: 15px !important;
+  padding: 40px !important;
+  background-color: #f8f9fa !important;
+  margin: 20px;
+  height: 500px;
+  cursor: pointer;
+
+  width: 450px;
+  margin-left: 100px;
+}
+.bsLogin:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+}
+
+.loginForm{
+  margin-top: 50px;
+}
+.loginForm > input{
+
+  margin-bottom: 20px;
+  padding: 20px;
+  
+}
+
+.bsRegister{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px !important;
+  border-radius: 15px !important;
+  padding: 40px !important;
+  background-color: #f8f9fa !important;
+  margin: 20px;
+  height: 600px;
+  cursor: pointer;
+
+  width: 450px;
+  margin-left: 100px;
+}
+
+.bsRegister:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+}
+
+.registerForm{
+  margin-top: 50px;
+}
+
+.registerForm > input {
+  margin-bottom: 20px;
+  padding: 20px;
+  /* border: 5px solid lightgrey; */
+}
+
+.myProfilebs{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 50px !important;
+  border-radius: 5px !important;
+  padding: 40px !important;
+  background-color: #f8f9fa !important;
+  margin: 20px;
+  height: 250px;
+  cursor: pointer;
+}
+.myProfilebs:hover{
+  -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+}
+.searchRooms, .dropdownCategory{
+  /* padding: 25px;  */
+}
+
+.fliteredData> div> input {
+  /* Awesome styling */
+  /* outline: none; */
+  /* border: 3px solid red; */
+}
+
+
+.fliteredData> div> input, .loginForm > input , .registerForm > input{
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 3px solid gray !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+  height: 50px !important;
+}
+
+
+.fliteredData> div> select {
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 3px solid gray !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+  height: 50px !important;
+}
+
+.fliteredData> div> .ant-picker {
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 3px solid gray !important;
+  width: 100% !important;
+  border-radius: 10px !important;
+  height: 50px !important;
+}
+
+
+
+.dropdownEminities{
+  /* padding: 25px;  */
+  /* float: left; */
+}
+
+.bookingDropdowns{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+
+.selectDateInput{
+  border-radius: 15px !important;
+}
+
+.bigimg {
+  height: 400px;
+  border-radius: 5px !important;
+  /* width: 100% !important;
+  border-radius: 5px !important; */
+}
+
+input,
+select,
+.ant-picker {
+  box-shadow: none !important;
+  margin-top: 10px;
+  border: 1px solid #212529 !important;
+  width: 100% !important;
+  border-radius: 3px !important;
+  height: 35px !important;
+}
+
+
+
+h2 {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: black !important;
+}
+
+.ant-picker-input input {
+  border: none !important;
+}
+
+p {
+  font-size: 15px !important;
+}
+
+.landing {
+  /* background-color: red !important; */
+  background-image: url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/images/headmast-desktop/itchotels-boutique.jpg");
+  /* C:\Users\Checkout\Downloads\MERNHotelBooking-main\MERNHotelBooking-main\client\images\hotelroom0.jpg */
+  height: 100vh;
+  padding-top: 130px;
+  /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landingBtn {
+  /* background-color: white !important;
+  color: #212529 !important;
+  margin-top: 20px !important; */
+
+    height: 70px;
+    width: 200px;
+    border: 3px solid #212529;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.landingBtn:hover {
+  border: 3px solid black;
+}
