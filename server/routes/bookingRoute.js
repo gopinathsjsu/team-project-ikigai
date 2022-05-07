@@ -49,6 +49,24 @@ router.post("/getbookingbyuserid", async (req, res) => {
     return res.status(400).json({ message: error });
   }
 });
+router.put("/editdates", async (req, res) => {
+  const userid = req.body.userid;
+  const roomid  = req.body.roomid;
+  const todate=req.body.toDate;
+  const fromdate=req.body.fromDate;
+  console.log("u"+userid);
+  console.log("u"+roomid);
+  console.log("u"+todate);
+  console.log("u"+fromdate);
+  try {
+    const bookings = await Booking.updateOne({ userid: userid, roomid:roomid },{todate:todate,fromdate:fromdate});
+    console.log("success");
+    res.send(bookings);
+  } catch (error) {
+    console.log(error);
+    return res.status(400).json({ message: error });
+  }
+});
 
 router.post("/bookroom", async (req, res) => {
   

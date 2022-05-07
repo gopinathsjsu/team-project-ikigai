@@ -23,6 +23,7 @@ function MyBookingScreen() {
           userid: user._id,
         })
       ).data;
+      console.log(data);
       setBookings(data);
     } catch (error) {
       console.log(error);
@@ -96,7 +97,7 @@ function MyBookingScreen() {
                       )}
                     </p>
                     <div className="edit-booking">
-                      <Link to={`/EditBooking`}>
+                      <Link to={`/EditBooking/${booking.roomid}`}>
                         <button className="btn-edit">Edit Booking</button>
                       </Link>
                     </div>
