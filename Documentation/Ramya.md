@@ -1,65 +1,98 @@
-Ramya Mandapati
-Weekly Scrum Report
-Sprint 1 :- 03/14/2021 - 03/20/2021
-What tasks did I work on / complete?
-NA
-What am I planning to work on next?
-Revise MERN stack.
-Design application flow.
-What tasks are blocked waiting on another team member?
-None
-Sprint 2 :- 03/21/2021 - 04/03/2021 (mid exams + spring break during the sprint, so it was longer)
-What tasks did I work on / complete?
-Revised MERN stack.
-Decided on application flow.ct.
-What am I planning to work on next?
-plan database schema
-create database
-Setup database connection in the code.
-setup working directory structute
-Add mock data to hotel database
-What tasks are blocked waiting on another team member?
-None
-Sprint 3 :- 04/04/2021 - 04/10/2021
-What tasks did I work on / complete?
-plan and create database schema
-Setup database connection in the code.
-setup working directory structute
-Add mock data to hotel database
-What am I planning to work on next?
-Write API's for room route
-write API to get user data in User route
-What tasks are blocked waiting on another team member?
-What tasks are blocked waiting on another team member?
-None
-Sprint 4 :- 04/11/2021 - 04/17/2021
-What tasks did I work on / complete?
-Write API's for room route
-write API to get user data in User route
-What tasks are blocked waiting on another team member?
-created routes.
-What am I planning to work on next?
-Integrate the the remaining API's of another team mate.
-Verifying all the API's using postman
-What tasks are blocked waiting on another team member?
-None
-Sprint 5 :- 04/18/2021 - 04/24/2021
-What tasks did I work on / complete?
-API's completed
+# Ramya Mandapati
 
-What am I planning to work on next?
+## Sprint 1 (Week 1):
 
-What tasks are blocked waiting on another team member?
-Rewards API's to be written by Preneet. He is not responding.
+### 1. What tasks did I work on?
 
-Sprint 6 :- 05/04/2021 - 05/10/2021
-What tasks did I work on / complete?
-Backend user and room API's
-tested the API's written by me.
-What am I planning to work on next?
-Integrate the pages with backend
-Test entire application.
-What tasks are blocked waiting on another team member?
-Pending Rewards and peakpricing component due to the absence of a team member.
+Read the project requirements, set up the GitHub project and finalized the design & architecture.
 
-Sprint 7 :-
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Explore various backend technologies for implementation and decide the tech stack required for the project implementation.
+
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+## Sprint 2 (Week 2):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Finalized using Node JS & Express JS, and brushed up on the basic concepts. Created a cluster in MongoDB.
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Develop basic GET & POST APIs. Set up routes in the server. Set up MongoDB table connections. Start with basic documentation.
+
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+## Sprint 3 (Week 3):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Created models required for backend APIs. Finalized all room and User APIs. Completed basic documentation.
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Test APIs with appropriate Request and Response. Make sure frontend and backend are synchronous with the same design logic. Review APIs and integrate.
+
+### 3. What tasks blockers did I have?
+
+Waited on Praneet to complete rewards and peakpricing api's.
+
+## Sprint 4 (Week 4):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Assisted in the integration of frontend and backend.
+
+### 2. What do I plan to do before the Demo Day?
+
+Validate all APIs. Work on Deployment. Check all functionalities in the working environment. Review all integrations.
+
+### 3. What tasks blockers did I have?
+
+waiting on member rewards component as there is no response.
+
+## Sprint 5 (Week 5):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Assisted in the integration of frontend and backend.
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Validate all APIs. Work on Deployment.
+Check all functionalities in the working environment.
+Review all integrations.
+Distribute pending Praneeths components
+
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+## Sprint 6 (Week 6):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Worked on extra pricing and rewards.
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Deploy ec2 instance
+
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+## Sprint 6 (Week 6):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+### 3. What tasks blockers did I have?
+
+No blockers.
