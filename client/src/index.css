@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: #212529scale;
   font-family: "Montserrat", sans-serif !important;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 code {
@@ -49,13 +49,42 @@ h1 {
   font-weight: 500;
   /* border: 2px solid #414040; */
   border-radius: 50px;
+
+  /* margin-top: -9%; */
 }
-.btn:hover{
+.btn:hover {
   background-color: white !important;
   color: black !important;
-
 }
 
+.btn-edit {
+  background-color: #212529 !important;
+  color: white !important;
+  box-shadow: none !important;
+  font-size: 20px;
+  font-weight: 500;
+  /* border: 2px solid #414040; */
+  border-radius: 50px;
+}
+
+.btn-edit:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.btn-danger {
+  background-color: #212529 !important;
+  color: white !important;
+  box-shadow: none !important;
+  font-size: 20px;
+  font-weight: 500;
+  /* border: 2px solid #414040; */
+  margin-top: -9%;
+  border-radius: 50px;
+}
+.btn-danger:hover {
+  background-color: white !important;
+  color: black !important;
+}
 .fliteredData {
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   /* margin-top: 50px !important; */
@@ -66,13 +95,12 @@ h1 {
   position: absolute;
   top: 150px;
   z-index: 3;
-  margin-right:200px;
+  margin-right: 200px;
 }
 
-.fliteredData > div >label {
-
+.fliteredData > div > label {
   font-size: 25px;
-    font-weight: 500;
+  font-weight: 500;
 }
 .bs {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -85,13 +113,11 @@ h1 {
   cursor: pointer;
 }
 
-.bs:hover{
+.bs:hover {
   -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
-
-
 
 .bsBookingScreen {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -104,42 +130,43 @@ h1 {
   cursor: pointer;
 }
 
-.bsBookingScreen:hover{
+.bsBookingScreen:hover {
   -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 
-.registerScreen{
+.registerScreen {
   background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-marina-pools-7900-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
-   /* Full height */
-   height: 100%;
+  /* Full height */
+  height: 100%;
 
-   /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-   /* black color: #212529; */
+  /* black color: #212529; */
 }
 
-.loginScreen{
+.loginScreen {
   background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-sangam-lobby-8097-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
-   /* Full height */
-   height: 100%;
+  /* Full height */
+  height: 100%;
 
-   /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-   /* black color: #212529; */
+  /* black color: #212529; */
 }
-.mt-5, .my-5 {
-  margin-top: 0rem!important;
-  margin-bottom: 6rem!important;
+.mt-5,
+.my-5 {
+  margin-top: 0rem !important;
+  margin-bottom: 6rem !important;
 }
-.bsLogin{
+.bsLogin {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 50px !important;
   border-radius: 15px !important;
@@ -152,23 +179,21 @@ h1 {
   width: 450px;
   margin-left: 100px;
 }
-.bsLogin:hover{
+.bsLogin:hover {
   -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 
-.loginForm{
+.loginForm {
   margin-top: 50px;
 }
-.loginForm > input{
-
+.loginForm > input {
   margin-bottom: 20px;
   padding: 20px;
-  
 }
 
-.bsRegister{
+.bsRegister {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 50px !important;
   border-radius: 15px !important;
@@ -182,13 +207,13 @@ h1 {
   margin-left: 100px;
 }
 
-.bsRegister:hover{
+.bsRegister:hover {
   -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 
-.registerForm{
+.registerForm {
   margin-top: 50px;
 }
 
@@ -198,7 +223,7 @@ h1 {
   /* border: 5px solid lightgrey; */
 }
 
-.myProfilebs{
+.myProfilebs {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 50px !important;
   border-radius: 5px !important;
@@ -208,23 +233,25 @@ h1 {
   height: 250px;
   cursor: pointer;
 }
-.myProfilebs:hover{
+.myProfilebs:hover {
   -moz-box-shadow: 0 0 10px #ccc;
-      -webkit-box-shadow: 0 0 10px #ccc;
-      box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
-.searchRooms, .dropdownCategory{
+.searchRooms,
+.dropdownCategory {
   /* padding: 25px;  */
 }
 
-.fliteredData> div> input {
+.fliteredData > div > input {
   /* Awesome styling */
   /* outline: none; */
   /* border: 3px solid red; */
 }
 
-
-.fliteredData> div> input, .loginForm > input , .registerForm > input{
+.fliteredData > div > input,
+.loginForm > input,
+.registerForm > input {
   box-shadow: none !important;
   margin-top: 10px;
   border: 3px solid gray !important;
@@ -233,8 +260,7 @@ h1 {
   height: 50px !important;
 }
 
-
-.fliteredData> div> select {
+.fliteredData > div > select {
   box-shadow: none !important;
   margin-top: 10px;
   border: 3px solid gray !important;
@@ -243,7 +269,7 @@ h1 {
   height: 50px !important;
 }
 
-.fliteredData> div> .ant-picker {
+.fliteredData > div > .ant-picker {
   box-shadow: none !important;
   margin-top: 10px;
   border: 3px solid gray !important;
@@ -252,22 +278,19 @@ h1 {
   height: 50px !important;
 }
 
-
-
-.dropdownEminities{
+.dropdownEminities {
   /* padding: 25px;  */
   /* float: left; */
 }
 
-.bookingDropdowns{
+.bookingDropdowns {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
   justify-content: space-evenly;
 }
 
-
-.selectDateInput{
+.selectDateInput {
   border-radius: 15px !important;
 }
 
@@ -288,8 +311,6 @@ select,
   border-radius: 3px !important;
   height: 35px !important;
 }
-
-
 
 h2 {
   font-size: 30px;
@@ -321,18 +342,62 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.aboutus-content {
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-corridor-3897-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
 
+  /* C:\Users\Checkout\Downloads\MERNHotelBooking-main\MERNHotelBooking-main\client\images\hotelroom0.jpg */
+  height: 100vh;
+  padding-top: 130px;
+
+  /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contactus-content {
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-hall-3916-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
+
+  /* C:\Users\Checkout\Downloads\MERNHotelBooking-main\MERNHotelBooking-main\client\images\hotelroom0.jpg */
+  height: 100vh;
+  padding-top: 130px;
+
+  /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .landingBtn {
   /* background-color: white !important;
   color: #212529 !important;
   margin-top: 20px !important; */
 
-    height: 70px;
-    width: 200px;
-    border: 3px solid #212529;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: 600;
+  height: 70px;
+  width: 200px;
+  border: 3px solid #212529;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ourhotel-content {
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-banquet-0743-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
+
+  /* C:\Users\Checkout\Downloads\MERNHotelBooking-main\MERNHotelBooking-main\client\images\hotelroom0.jpg */
+  height: 100vh;
+  padding-top: 130px;
+
+  /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landingBtn:hover {

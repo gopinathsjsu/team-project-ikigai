@@ -1,0 +1,44 @@
+.editbooking-heading {
+  text-align: center;
+  margin-top: 10%;
+  font-style: normal;
+}
+
+.editBooking-inputs {
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 1px solid;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+}
+.saveBooking {
+  display: flex;
+  justify-content: center;
+}
+.editBooking-savebtn {
+  position: absolute;
+  background-color: #0a0a23;
+  color: black;
+  margin-right: 130px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 10px;
+  min-width: 120px;
+}
+
+.editBooking-cancelbtn {
+  position: absolute;
+  background-color: #0a0a23;
+  color: black;
+  margin-left: 130px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 10px;
+  min-width: 120px;
+}

@@ -5,6 +5,7 @@ import { Tag } from "antd";
 
 import Loader from "../components/Loader";
 import Error from "../components/Error";
+import { Link } from "react-router-dom";
 
 function MyBookingScreen() {
   const [bookings, setBookings] = useState([]);
@@ -94,6 +95,11 @@ function MyBookingScreen() {
                         <Tag color="red">CANCELLED</Tag>
                       )}
                     </p>
+                    <div className="edit-booking">
+                      <Link to={`/EditBooking`}>
+                        <button className="btn-edit">Edit Booking</button>
+                      </Link>
+                    </div>
                     {booking.status === "booked" && (
                       <div className="text-right">
                         <button

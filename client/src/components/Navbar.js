@@ -60,13 +60,13 @@ function Navbar() {
         <a className="navbar-brand" href="/">
           ITC HOTELS
         </a>
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/OurHotelsScreen">
           OUR HOTELS
         </a>
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/About">
           ABOUT
         </a>
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/Contact">
           CONTACT
         </a>
         <button
