@@ -20,3 +20,7 @@ MERN Stack Hotel Booking App
 
 - Wednesday
 - Saturday
+
+## Project Management Tool:
+
+Kanban
