@@ -79,7 +79,8 @@ function Bookingscreen({ match }) {
   }, [room]);
 
   const onToken = async () => {
- 
+    
+    localStorage.setItem('currentUser',)
     const bookingDetails = {
       room,
       userid: JSON.parse(localStorage.getItem("currentUser"))._id,
@@ -92,7 +93,7 @@ function Bookingscreen({ match }) {
 
     try {
       setLoading(true);
-      const result1=axios.put(`/api/users/editRewards/${user._id}`);
+      const result1=axios.put(`/api/users/editRewards/${user._id}`,{rewards:rew});
       const result = await axios.post("/api/bookings/bookroom", bookingDetails);
       setLoading(false);
       Swal.fire(
