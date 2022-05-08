@@ -62,4 +62,8 @@ npm start
 
 ## Sprint Sheet:
 
-[Sprint Sheet for Team DDST](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Sprint_Sheet.xlsx)
+[Sprint Sheet for Hotel-Booking](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Sprint_Sheet.xlsx)
+
+## Project Journals:
+
+Please find all the individual project journals in the [Documentation](https://github.com/gopinathsjsu/team-project-ikigai/tree/main/Documentation/) directory.
