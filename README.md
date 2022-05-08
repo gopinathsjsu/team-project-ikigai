@@ -24,3 +24,10 @@ MERN Stack Hotel Booking App
 ## Project Management Tool:
 
 Kanban
+
+## Task Allocations:
+
+- Frontend: Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
+- Backend: Ramya Mandapati
+- Database: Ramya Mandapati, Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
+- Deployment: Ramya Mandapati, Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
