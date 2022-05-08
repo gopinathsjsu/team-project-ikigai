@@ -52,7 +52,6 @@ npm start
 ```
 npm install
 npm start
-
 ```
 
 4. The web application opens in the default browser
