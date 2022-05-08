@@ -15,3 +15,8 @@ MERN Stack Hotel Booking App
 - Database: MongoDB
 - REST API: Postman (for testing developed APIs)
 - Cloud: Amazon Web Services (AWS) EC2 Cluster
+
+## Schedule for Scrum Meetings:
+
+- Wednesday
+- Saturday
