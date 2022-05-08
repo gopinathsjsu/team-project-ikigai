@@ -55,3 +55,7 @@ npm start
 ```
 
 4. The web application opens in the default browser
+
+## XP Core Values:
+
+[XP Core Values implemented by our team](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/XP_Core_Values.md)
