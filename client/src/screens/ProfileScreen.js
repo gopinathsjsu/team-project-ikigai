@@ -1,27 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Tabs } from "antd";
 import { Tag } from "antd";
-import axios from "axios";
 
 import MyBookingScreen from "./MyBookingScreen";
 const { TabPane } = Tabs;
 
 function ProfileScreen() {
-  const [user,setUser]=useState([]);
-  const user1 = JSON.parse(localStorage.getItem("currentUser"));
-  const id=user1._id
+  const user = JSON.parse(localStorage.getItem("currentUser"));
+
   useEffect(() => {
-    if (!user1) {
+    if (!user) {
       window.location.href = "/login";
-    }
-    try{
-      axios.get(`api/users/getuserbyid/${id}`)
-      .then((user2)=>{
-      console.log(user2.data);
-      setUser(user2.data)
-      })
-    }catch(error){
-      console.log(error);
     }
   }, []);
 
