@@ -59,3 +59,7 @@ npm start
 ## XP Core Values:
 
 [XP Core Values implemented by our team](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/XP_Core_Values.md)
+
+## Sprint Sheet:
+
+[Sprint Sheet for Team DDST](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Sprint_Sheet.xlsx)
