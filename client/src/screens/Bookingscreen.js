@@ -20,6 +20,12 @@ function Bookingscreen({ match }) {
   const todate = moment(match.params.todate, "DD-MM-YYYY");
   const totaldays = moment.duration(todate.diff(fromdate)).asDays() + 1;
   const user = JSON.parse(localStorage.getItem("currentUser"));
+  const [b,setB]=useState(false);
+  const [g,setG]=useState(false);
+  const aminities=[];
+  const [p,setP]=useState(false);
+  const [m,setM]=useState(false);
+  var price=0
   function weekends(){
     var we=0;
     var currentDate = new Date(fromdate);
@@ -69,7 +75,12 @@ function Bookingscreen({ match }) {
     fetchMyAPI();
   }, []);
   const totalPrice=()=>{
-    return (roomcount*((totaldays * room.rentperday)+(Number(weekends())*50)));
+    price=(roomcount*((totaldays * room.rentperday)+(Number(weekends())*50)));
+    if(b){price+=30}
+    if(g){price+=10}
+    if(p){price+=10}
+    if(m){price+=50}
+    return price
   }
 
   useEffect(() => {
@@ -79,7 +90,10 @@ function Bookingscreen({ match }) {
   }, [room]);
 
   const onToken = async () => {
- 
+    if(b){aminities.push("Breakfast")}
+    if(g){aminities.push("Gym access")}
+    if(p){aminities.push("Parking")}
+    if(m){aminities.push("Lunch and Dinner")}
     const bookingDetails = {
       room,
       userid: JSON.parse(localStorage.getItem("currentUser"))._id,
@@ -87,6 +101,7 @@ function Bookingscreen({ match }) {
       todate,
       totalAmount:totalPrice(),
       totaldays: totalDays,
+      aminities:aminities
      
     };
 
@@ -146,52 +161,49 @@ function Bookingscreen({ match }) {
                 <p>From Date : {match.params.fromdate}</p>
                 <p>To Date : {match.params.todate}</p>
                 <p>Available Rooms : {room.maxcount}</p>
-                {/* <p>Eminities : {room.maxcount}</p> */}
+                
               </b>
-            </div>
+            
 
-            <div className="col-md-12 bookingDropdowns">
-              <div className="col-md-6 dropdownEminities">
-                <label for="rooms">Eminities</label>
-                <select
-                  name="eminities"
-                  className="form-control dropdownEminities"
-                >
-                  <option value="all">Daily Continental Breakfast</option>
-                  <option value="delux">Access to fitness room</option>
-                  <option value="non-delux">
-                    Access to Swimming Pool/Jacuzzi
-                  </option>
-                  <option value="non-delux">Daily Parking</option>
-                  <option value="non-delux">
-                    All meals included (Breakfast, Lunch, Dinner)
-                  </option>
-                </select>
-              </div>
-              <div className="col-md-6 dropdownRoomsCount">
-                <label for="rooms">Rooms</label>
-                {/* <select
-                    id="roomsCount"
-                    name="rooms"
-                    className="form-control dropdownRoomsCount"
-                  >
-                    <option value= "1">1</option>
-                    <option value= "2">2</option>
-                    <option value= "3">3</option>
-                  </select> */}
-                {/* Give max count value here */}
-                {/* <RoomsDropdown length={room.maxcount} onClick={(e)=>setroomcount(e.target.value)}/> */}
+           
+              {/* <div className="col-md-6 dropdownEminities"> */}
+              
+                <div
+        className="col-md-12"
+        style={{
+          height: "",
+          width: "",
+          display: "flex",
+          marginRight:"-20px",
+          fontWeight: ""
+        }}
+      ><b>
+       <p for="rooms" style={{marginRight:"10px"}}>Aminities:</p></b>
 
-                {/* {this.props.categories.map((items , index)=>{
-                    <option key{index}>{items.categoryName} </option>
-                              })}     */}
+        <input type="checkbox" style={{transform:"scale(0.7)"}}id="vehicle1" name="vehicle1" value="Bike" onChange={(e)=>setB(e.target.checked)}/>
+        <b><p>Breakfast($30)</p></b>
+        <input type="checkbox" style={{transform:"scale(0.7)"}} id="vehicle2" name="vehicle2" value="Car" onChange={(e)=>setG(e.target.checked)}/>
+        <b><p> Gym($10)</p></b>
+       
+        <input type="checkbox" style={{transform:"scale(0.7)"}} id="vehicle1" name="vehicle1" value="Bike" onChange={(e)=>setP(e.target.checked)}/>
+        <b><p>Parking($10)</p></b>
+        <input type="checkbox" style={{transform:"scale(0.7)"}} id="vehicle2" name="vehicle2" value="Car" onChange={(e)=>setM(e.target.checked)}/>
+        <b><p>Meals($50)</p></b>
+        
+        
+      </div>
+      
+              
+              <div className="col-md-4 dropdownRoomsCount" style={{display:"flex",marginLeft:"400px"}}>
+                <b><p for="rooms" >Rooms </p></b>
+                
 
-<select style={{marginLeft:"50px"}} onChange={(e)=>setroomcount(e.target.value)}>
+                  <select style={{marginLeft:"20px",marginBottom:"10px", align:"right"}} onChange={(e)=>setroomcount(e.target.value)}>
                     { /*Array.from(Array(Products.count)).map((e,value) => <option key={value} value={value}>{value+1}</option>) */}
                     {Array.apply(1, {length: room.maxcount}).map((e,value) => <option key={value+1} value={value+1}>{value+1}</option>)}
                     </select><br></br>
               </div>
-            </div>
+              </div>
 
             <div style={{ textAlign: "right" }}>
               <h1>Amount</h1>

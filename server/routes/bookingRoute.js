@@ -88,7 +88,7 @@ router.put("/editdates", async (req, res) => {
 
 router.post("/bookroom", async (req, res) => {
   
-    const { room, userid, fromdate, todate, totalAmount, totaldays, token } =
+    const { room, userid, fromdate, todate, totalAmount, totaldays, aminities } =
       req.body;
 
 
@@ -104,7 +104,7 @@ router.post("/bookroom", async (req, res) => {
             todate: moment(todate).format("DD-MM-YYYY"),
             totalamount: totalAmount,
             totaldays,
-            transactionid: uuidv4(),
+            aminities:aminities
           });
 
           const booking = await newBooking.save();

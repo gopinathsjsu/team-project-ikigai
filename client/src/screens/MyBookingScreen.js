@@ -22,7 +22,8 @@ function MyBookingScreen() {
         await axios.post("/api/bookings/getbookingbyuserid", {
           userid: user._id,
         })
-      ).data;
+      ).data; 
+      console.log(data);
       setBookings(data);
     } catch (error) {
       console.log(error);
@@ -84,6 +85,10 @@ function MyBookingScreen() {
                     <p>
                       <b>CheckOut:</b> {booking.todate}
                     </p>
+                    <p>
+                      <b>Extra Aminities:</b> {String(booking.aminities)}
+                    </p>
+
                     <p>
                       <b>Amount:</b> {booking.totalamount}
                     </p>

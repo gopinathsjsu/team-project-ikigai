@@ -4,10 +4,16 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function Room({ room, fromDate, toDate }) {
   const [show, setShow] = useState(false);
-
+  const [cost,setCost]=useState(0);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  
 
+  // useEffect(() => {
+  //   if (!user) {
+  //     window.location.href = "/login";
+  //   }
+  // }, []);
   return (
     <div className="row bs">
       <div className="col-md-4">
@@ -20,6 +26,7 @@ function Room({ room, fromDate, toDate }) {
           <p>Available Rooms : {room.maxcount}</p>
           <p>Phone Number : {room.phonenumber}</p>
           <p>Type : {room.type}</p>
+          <p>Price (starting from) : $ {room.rentperday}</p>
         </b>
 
         {/* 
@@ -51,28 +58,7 @@ function Room({ room, fromDate, toDate }) {
         </div>
       </div>
 
-      <div
-        className="col-md-12"
-        style={{
-          height: "",
-          width: "",
-          display: "flex",
-          marginTop: "20px",
-          fontWeight: ""
-        }}
-      >
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        Breakfast
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        Gym
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        Swimming Pool
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        Parking
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        Meals
-
-      </div>
+     
 
       <Modal show={show} onHide={handleClose} size="lg">
         <Modal.Header>
