@@ -8,6 +8,14 @@ AOS.init({
 });
 
 function LandingScreen() {
+  const login_user=JSON.parse(localStorage.getItem("currentUser"));
+  function navigatehome(){
+      if(login_user.isAdmin==true){
+        window.location.href = "/admin"
+      }else{
+        window.location.href = "/home"
+      }
+    }
   return (
     <div className="row landing">
       <div className="col-md-12 text-center">
@@ -17,9 +25,9 @@ function LandingScreen() {
         {/* <h1 data-aos="zoom-out" style={{ color: "black" }}>
         
         </h1> */}
-        <Link to="/home">
-          <button className="btn btn-primary landingBtn">Book</button>
-        </Link>
+        
+          <button className="btn btn-primary landingBtn" onClick={navigatehome}>Book</button>
+        
       </div>
     </div>
   );
