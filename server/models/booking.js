@@ -4,7 +4,7 @@ const bookingSchema = mongoose.Schema(
   {
     room: { type: String, required: true },
     status: { type: String, required: true, default: "booked" },
-    aminities:[],
+    aminities:{type: Array},
     roomid: { type: String, required: true },
     userid: { type: String, required: true },
     fromdate: { type: String, required: true },
