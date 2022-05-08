@@ -23,12 +23,13 @@ function MyBookingScreen() {
           userid: user._id,
         })
       ).data;
-      console.log(data);
+      
       setBookings(data);
     } catch (error) {
       console.log(error);
       setError(error);
     }
+
     setLoading(false);
   }
 

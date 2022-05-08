@@ -34,6 +34,17 @@ router.post("/login", async (req, res) => {
     return res.status(400).json({ message: error });
   }
 });
+router.get("/getuserbyid/:id",async(req,res)=>{
+  try{
+    console.log("r"+req.params.id);
+    const filter={_id:req.params.id};
+    const user= await User.findOne( filter );
+    console.log(user);
+    res.send(user);
+  }catch(error){
+    return res.status(400).json({ message: error });
+  }
+})
 
 router.post("/getallusers", async (req, res) => {
   try {
@@ -48,7 +59,12 @@ router.put("/editRewards/:id", async(req,res) =>{
   try{
     console.log("inside edit");
     filter={_id:req.params.id}
-    update={rewardPoints:10}
+    if(req.body.rewards==true){
+    update={rewardPoints:10};
+  }
+    else{
+      update={$inc:{rewardPoints:10}};
+    }
     User.updateOne(filter,update,
       function (err,result){
         if(result){
