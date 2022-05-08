@@ -39,7 +39,7 @@ function App() {
           <Route path="/HotelsScreen" exact component={OurHotelsScreen} />
           <Route path="/About" exact component={AboutScreen} />
           <Route path="/Contact" exact component={ContactScreen} />
-          <Route path="/EditBooking/:id" exact component={EditBooking} />
+          <Route path="/EditBooking" exact component={EditBooking} />
           <Route path="/OurHotelsScreen" exact component={OurHotelsScreen} />
         </Switch>
       </Router>
