@@ -67,3 +67,21 @@ npm start
 ## Project Journals:
 
 Please find all the individual project journals in the [Documentation](https://github.com/gopinathsjsu/team-project-ikigai/tree/main/Documentation/) directory.
+
+## UI Wireframe
+
+## Architecture Diagram
+
+## Design Decisions:
+
+### Architecture-Level
+
+### Business-Level:
+
+#### Admin Features:
+
+#### User Features:
+
+## Component Diagram:
+
+## Deployment Diagram:
