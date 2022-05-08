@@ -31,3 +31,28 @@ Kanban
 - Backend: Ramya Mandapati
 - Database: Ramya Mandapati, Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
 - Deployment: Ramya Mandapati, Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
+
+## Steps to test and run the application:
+
+1. Clone the repository
+
+```
+git clone https://github.com/gopinathsjsu/team-project-ikigai
+```
+
+2. Go to 'server' repository
+
+```
+npm install
+npm start
+```
+
+3. Go to 'client' repository
+
+```
+npm install
+npm start
+
+```
+
+4. The web application opens in the default browser
