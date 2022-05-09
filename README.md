@@ -70,6 +70,8 @@ Please find all the individual project journals in the [Documentation](https://g
 
 ## UI Wireframe
 
+Find the [UI Wireframe](https://github.com/gopinathsjsu/team-project-ikigai/tree/main/Documentation/Wireframes/) here.
+
 ## Architecture Diagram
 
 ![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Architecture%20Diagram.PNG)
