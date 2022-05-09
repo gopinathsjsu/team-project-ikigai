@@ -210,7 +210,7 @@ function Bookingscreen({ match }) {
               <hr />
               <b>
                 <p>Total Days : {totalDays}</p>
-                <p>Rent per day(weekdays)/(weekends) : {room.rentperday}/{room.rentperday+50}</p>
+                <p>Rent per day(weekdays)/(weekends) : $ {room.rentperday}/ ${room.rentperday+50}</p>
                 <div style={{display:"flex"}}>
                 <input
         type="checkbox"
@@ -224,8 +224,8 @@ function Bookingscreen({ match }) {
       <label htmlor="count" style={{height:"50px",width:"300px"}}>({JSON.parse(localStorage.getItem("currentUser")).rewardPoints}) Use reward points</label>
       <br></br>
       </div>
-      {rew?(<p>Total Amount : {totalPrice()-JSON.parse(localStorage.getItem("currentUser")).rewardPoints}</p>)
-      :(<p>Total Amount : {totalPrice()}</p>)}
+      {rew?(<p>Total Amount : $ {totalPrice()-JSON.parse(localStorage.getItem("currentUser")).rewardPoints}</p>)
+      :(<p>Total Amount : $ {totalPrice()}</p>)}
                 
                 
               </b>
