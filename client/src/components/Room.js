@@ -29,21 +29,9 @@ function Room({ room, fromDate, toDate }) {
           <p>Price (starting from) : $ {room.rentperday}</p>
         </b>
 
-        {/* 
-        <div>
-        Male<input type="radio" value="Male" name="gender" /> 
-        Female<input type="radio" value="Female" name="gender" /> 
-        Other<input type="radio" value="Other" name="gender" /> 
-      </div> */}
+  
 
-        {/* <Options>
-      <input type="radio" className="circle" name="icing" defaultValue={1} id="white" style={styles.radioWhite} />
-      <label class="radio" htmlFor="white"></label>
-      <input type="radio" className="circle" name="icing" defaultValue={2} id="pink" style={styles.radioPink} />
-      <label class="radio" htmlFor="pink"></label>
-      <input type="radio" className="circle" name="icing" defaultValue={3} id="red" style={styles.radioRed} />
-      <label class="radio" htmlFor="red"></label>
-    </Options> */}
+     
 
         <div style={{ float: "right" }}>
           {fromDate && toDate && (
