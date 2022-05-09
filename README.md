@@ -72,6 +72,8 @@ Please find all the individual project journals in the [Documentation](https://g
 
 ## Architecture Diagram
 
+![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Architecture%20Diagram.PNG)
+
 ## Design Decisions:
 
 ### Architecture-Level
