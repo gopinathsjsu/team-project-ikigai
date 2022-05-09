@@ -55,15 +55,12 @@ function Homescreen() {
       setFromDate(moment(dates[0]).format("DD-MM-YYYY"));
        setToDate(moment(dates[1]).format("DD-MM-YYYY"));
        var result=moment(dates[1]).diff(dates[0],'days');
+       
        if(result>7)
        {
          setError("Can't book rooms for more than 1 week")
        }
-      // const to=moment(dates[1]).format("DD-MM-YYYY");
-      // const from=moment(dates[0]).format("DD-MM-YYYY");
-      
-      // const diffInMs = Math.abs(to-from);
-      //  console.log(diffInMs/(1000 * 60 * 60 * 24));
+     
       var tempRooms = [];
       for (const room of rooms) {
         var availability = false;
@@ -135,7 +132,7 @@ function Homescreen() {
     <div className="homescreen">
       <img
         className="homescreen-image"
-        src="https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-itc-room-9934-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*"
+        src="https://www.marriott.com/content/dam/dme/hero/DemandGen_5_2_22_AEM_SupersizeHero_3240x1620_04_27_22-1.jpg.transform/mcom-hp-transform-2880x1620/image.jpg"
         alt="The Hotel"
         style={{ width: "100%", height: "800px" }}
       />
@@ -183,11 +180,12 @@ function Homescreen() {
           </div>
           <div className="col-md-4">
           <label for="rooms">Date</label><br></br>
-          <span style={{color:"red",fontWeight:"bolder"}}>{error}</span>
+          <span style={{color:"red",fontWeight:"bolder",fontSize:"15px"}}>{error}</span>
             <RangePicker
               className="datePicker datePickerDiv"
               format="DD-MM-YYYY"
               onChange={filterByDate}
+              minDate={new Date()}
               // style={{ padding:"25px" }}
             />
           </div>

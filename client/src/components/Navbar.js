@@ -57,7 +57,7 @@ function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/" style={{fontFamily: "Swiss-721"}}>
           ITC HOTELS
         </a>
         <a className="navbar-brand" href="/OurHotelsScreen">

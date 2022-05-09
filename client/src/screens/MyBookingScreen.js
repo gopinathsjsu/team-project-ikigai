@@ -35,6 +35,7 @@ function MyBookingScreen() {
   useEffect(() => {
     fetchMyAPI();
   }, []);
+  
 
   async function cancelBooking(bookingid, roomid) {
     setError("");
@@ -96,26 +97,28 @@ function MyBookingScreen() {
                       <b>Status:</b>{" "}
                       {booking.status === "booked" ? (
                         <Tag color="green">CONFIRMED</Tag>
+                        
                       ) : (
                         <Tag color="red">CANCELLED</Tag>
                       )}
                     </p>
-                    <div className="edit-booking">
-                      <Link to={`/EditBooking`}>
-                        <button className="btn-edit">Edit Booking</button>
-                      </Link>
-                    </div>
+                    
                     {booking.status === "booked" && (
-                      <div className="text-right">
-                        <button
-                          className="btn btn-danger"
-                          onClick={() => {
-                            cancelBooking(booking._id, booking.roomid);
-                          }}
-                        >
-                          Cancel Booking
-                        </button>
-                      </div>
+                      <><div className="edit-booking">
+
+                      <Link to={`/EditBooking/${booking.roomid}`}>
+                          <button className="btn-edit">Edit Booking</button>
+                        </Link>
+                      </div><div className="text-right">
+                          <button
+                            className="btn btn-danger"
+                            onClick={() => {
+                              cancelBooking(booking._id, booking.roomid);
+                            } }
+                          >
+                            Cancel Booking
+                          </button>
+                        </div></>
                     )}
                   </div>
                 );
