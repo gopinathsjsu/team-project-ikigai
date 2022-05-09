@@ -150,7 +150,26 @@ function AdminAddRoomScreen() {
                 },
               ]}
             >
+              
               <Input />
+            </Form.Item>
+            <Form.Item
+              name="location"
+              label="location"
+              rules={[
+                {
+                  required: true,
+                },
+              ]}
+            >
+              <Select placeholder="Select a location  " allowClear>
+                <Option value="Hyderabad">Hyderabad</Option>
+                <Option value="Dubai">Dubai</Option>
+                <Option value="London">London</Option>
+                <Option value="California">California</Option>
+                <Option value="Newyork">Newyork</Option>
+                <Option value="Texas">Texas</Option>
+              </Select>
             </Form.Item>
             <Form.Item
               name="type"
@@ -162,8 +181,9 @@ function AdminAddRoomScreen() {
               ]}
             >
               <Select placeholder="Select a room type" allowClear>
-                <Option value="delux">Delux</Option>
-                <Option value="non-delux">Non-Delux</Option>
+                <Option value="Double">Double</Option>
+                <Option value="Single">Single</Option>
+                <Option value="Suite">Suite</Option>
               </Select>
             </Form.Item>
             <Form.Item {...tailLayout}>

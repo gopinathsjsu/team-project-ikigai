@@ -27,7 +27,8 @@ function Homescreen() {
   const [duplicateRooms, setDuplicateRooms] = useState([]);
   const [searchKey, setSearchKey] = useState("");
   const [type, setType] = useState("all");
-
+  const [location, setLoc] = useState("all");
+  const [locRooms,setlocRooms]=useState([]);
   useEffect(() => {
     async function fetchMyAPI() {
       try {
@@ -48,14 +49,23 @@ function Homescreen() {
   }, []);
 
   function filterByDate(dates) {
-    // console.log(moment(dates[0]).format("DD-MM-YYYY"));
-    // console.log(moment(dates[1]).format("DD-MM-YYYY"));
+    console.log(moment(dates[0]).format("DD-MM-YYYY"));
+    console.log(moment(dates[1]).format("DD-MM-YYYY"));
     try {
       setFromDate(moment(dates[0]).format("DD-MM-YYYY"));
-      setToDate(moment(dates[1]).format("DD-MM-YYYY"));
-
+       setToDate(moment(dates[1]).format("DD-MM-YYYY"));
+       var result=moment(dates[1]).diff(dates[0],'days');
+       if(result>7)
+       {
+         setError("Can't book rooms for more than 1 week")
+       }
+      // const to=moment(dates[1]).format("DD-MM-YYYY");
+      // const from=moment(dates[0]).format("DD-MM-YYYY");
+      
+      // const diffInMs = Math.abs(to-from);
+      //  console.log(diffInMs/(1000 * 60 * 60 * 24));
       var tempRooms = [];
-      for (const room of duplicateRooms) {
+      for (const room of rooms) {
         var availability = false;
         if (room.currentbookings.length > 0) {
           for (const booking of room.currentbookings) {
@@ -99,10 +109,23 @@ function Homescreen() {
     setType(type);
     console.log(type);
     if (type !== "all") {
-      const tempRooms = duplicateRooms.filter(
+      const tempRooms = rooms.filter(
         (x) => x.type.toLowerCase() == type.toLowerCase()
       );
       setRooms(tempRooms);
+    } else {
+      setRooms(rooms);
+    }
+  }
+  function filterByLoc(location) {
+    setLoc(location);
+    console.log(location);
+    if (location !== "all") {
+      const tempRooms = duplicateRooms.filter(
+        (x) => x.location.toLowerCase() == location.toLowerCase()
+      );
+      setRooms(tempRooms);
+      
     } else {
       setRooms(duplicateRooms);
     }
@@ -137,29 +160,30 @@ function Homescreen() {
           </div>
 
         <div className="col-md-4">
-        <label for="rooms" className="fliteredDataLabel">Location</label>
+        <label for="location" className="fliteredDataLabel">Location</label>
             <select
-              name="category"
+              name="location"
               className="form-control dropdownCategory"
-              value={type}
+              value={location}
               onChange={(e) => {
-                filterByType(e.target.value);
+                filterByLoc(e.target.value);
               }}
               required
             >
               {/* <option value="" selected disabled>
                 Category
               </option> */}
-              <option value="all">Hyderabad</option>
-              <option value="delux">Dubai</option>
-              <option value="non-delux">London</option>
-              <option value="all">California</option>
-              <option value="delux">Newyork</option>
-              <option value="non-delux">Texas</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Dubai">Dubai</option>
+              <option value="London">London</option>
+              <option value="California">California</option>
+              <option value="Newyork">Newyork</option>
+              <option value="Texas">Texas</option>
             </select>
           </div>
           <div className="col-md-4">
-          <label for="rooms">Date</label>
+          <label for="rooms">Date</label><br></br>
+          <span style={{color:"red",fontWeight:"bolder"}}>{error}</span>
             <RangePicker
               className="datePicker datePickerDiv"
               format="DD-MM-YYYY"
@@ -181,9 +205,10 @@ function Homescreen() {
               {/* <option value="" selected disabled>
                 Category
               </option> */}
-              <option value="all">Double</option>
-              <option value="delux">Suite</option>
-              <option value="non-delux">Single</option>
+              <option value="all">All</option>
+              <option value="Suite">Suite</option>
+              <option value="Single">Single</option>
+              <option value="Double">Double</option>
             </select>
           </div>
         </div>
