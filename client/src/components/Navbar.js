@@ -66,7 +66,7 @@ function Navbar() {
           ITC HOTELS
         </a>
         {/* Static Pages */}
-        <a className="navbar-brand" href="/OurHotelsScreen">
+        <a className="navbar-brand" href="/OurHotelsScreen" style={{fontFamily: "Swiss-721"}}>
 
           OUR HOTELS
         </a>

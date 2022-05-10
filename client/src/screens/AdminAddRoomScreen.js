@@ -51,7 +51,7 @@ function AdminAddRoomScreen() {
   };
 
   return (
-    <div className="row">
+    <div className="row" style={{fontWeight:"bold"}}>
       {loading ? (
         <Loader></Loader>
       ) : error.length > 0 ? (

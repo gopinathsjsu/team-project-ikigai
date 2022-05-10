@@ -73,7 +73,7 @@ function MyBookingScreen() {
         <div className="row">
           <div className="col-md-6  ml-5">
             {bookings &&
-              bookings.map((booking) => {
+              bookings?.map((booking) => {
                 return (
                   <div className="bs">
                     <h1>{booking.room}</h1>
