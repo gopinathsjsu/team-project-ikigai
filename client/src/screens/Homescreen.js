@@ -188,6 +188,10 @@ function Homescreen() {
           <label for="rooms">Date</label><br></br>
           <span style={{color:"red",fontWeight:"bolder",fontSize:"15px"}}>{error}</span>
             <RangePicker
+            disabledDate={(current) => {
+              let customDate = moment().format("YYYY-MM-DD");
+              return current && current < moment(customDate, "YYYY-MM-DD");
+            }} 
               className="datePicker datePickerDiv"
               format="DD-MM-YYYY"
               onChange={filterByDate}
