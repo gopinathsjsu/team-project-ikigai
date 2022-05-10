@@ -86,6 +86,10 @@ Find the [UI Wireframe](https://github.com/gopinathsjsu/team-project-ikigai/tree
 
 #### User Features:
 
+## Class Diagram
+
+![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Class%20Diagram.png)
+
 ## Component Diagram:
 
 ![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Component%20Diagram.png)
