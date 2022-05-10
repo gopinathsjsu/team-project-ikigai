@@ -23,14 +23,13 @@ MERN Stack Hotel Booking App
 
 ## Project Management Tool:
 
-Kanban
+Git Project Board
 
-## Task Allocations:
+## Team Members:
 
-- Frontend: Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
-- Backend: Ramya Mandapati
-- Database: Ramya Mandapati, Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
-- Deployment: Ramya Mandapati, Mohammad Javeed Snaganakal, Vinay Kumar Reddy Seelam
+- Ramya Mandapati - 016009994
+- Mohammad Javeed Snaganakal - 016043118
+- Vinay Kumar Reddy Seelam - 016040648
 
 ## Steps to test and run the application:
 
