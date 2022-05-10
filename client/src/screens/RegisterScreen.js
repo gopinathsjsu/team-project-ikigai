@@ -23,7 +23,7 @@ function RegisterScreen() {
         password,
         cpassword,
       };
-      //console.log(user);
+
       setLoading(true);
       setError("");
       setSuccess("");
@@ -98,10 +98,11 @@ function RegisterScreen() {
                 <button className="btn btn-primary mt-3" onClick={register}>
                   Register
                 </button>
-
-                
               )}
-              <p style={{ marginTop: "10px" }}>By signing up, I agree & accept the Terms & Conditions of the Club ITC Programme</p>
+              <p style={{ marginTop: "10px" }}>
+                By signing up, I agree & accept the Terms & Conditions of the
+                Club ITC Programme
+              </p>
             </div>
           </div>
         </div>
