@@ -17,6 +17,7 @@ function ProfileScreen() {
   function callback(key) {
     console.log(key);
   }
+  //console.log(key);
 
   return (
     <div className="ml-3 mt-3">
