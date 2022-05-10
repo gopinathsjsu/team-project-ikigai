@@ -19,7 +19,7 @@ function LoginScreen() {
       email,
       password,
     };
-    //console.log(user);
+
     try {
       const result = (await axios.post("/api/users/login", user)).data;
       console.log(result);
@@ -70,7 +70,7 @@ function LoginScreen() {
                 </button>
               )}
 
-              <p style={{marginTop: "10px"}}>Forgot Password</p>
+              <p style={{ marginTop: "10px" }}>Forgot Password</p>
             </div>
           </div>
         </div>
