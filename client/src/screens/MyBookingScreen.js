@@ -64,7 +64,7 @@ function MyBookingScreen() {
   }
 
   return (
-    <div>
+    <div className="bookings">
       {loading ? (
         <Loader></Loader>
       ) : error.length > 0 ? (

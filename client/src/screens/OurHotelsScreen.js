@@ -18,7 +18,7 @@ function OurHotelsScreen() {
           data-aos="zoom-in"
           style={{ color: "white", fontSize: "200px", textAlign: "center" }}
         >
-          <b>
+          <b style={{ color: "Black"}}>
             Allow us to open up your world with True Hospitality for Good. Our
             diverse set of global destinations exist to broaden your choices,
             invite you to save or splurge, and encourage you with welcoming

@@ -14,7 +14,7 @@ function AboutScreen() {
         <h2 data-aos="zoom-in" style={{ color: "Black", fontSize: "100px" }}>
           Welcome to the ITC Hotel.
         </h2>
-        <p data-aos="zoom-in" style={{ color: "white", fontSize: "200px" }}>
+        <p data-aos="zoom-in" style={{ color: "black", fontSize: "200px" }}>
           <b>
             A luxury lifestyle hotel in Historic Downtown McMinnville–the heart
             of Oregon Wine Country–the 36 room ITC Hotel has grown out of the

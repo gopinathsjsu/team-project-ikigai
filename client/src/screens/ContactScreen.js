@@ -16,7 +16,7 @@ function ContactScreen() {
         </h2>
         <p
           data-aos="zoom-in"
-          style={{ color: "white", fontSize: "200px", textAlign: "center" }}
+          style={{ color: "black", fontSize: "200px", textAlign: "center" }}
         >
           <b>
             <p>252 Schermerhorn St Brooklyn, </p>

@@ -15,6 +15,7 @@ import OurHotelsScreen from "./screens/OurHotelsScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
 import EditBooking from "./screens/EditBooking";
+import MyBookingScreen from "./screens/MyBookingScreen";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/profile" exact component={ProfileScreen} />
           <Route path="/bookings" exact component={ProfileScreen} />
           <Route path="/admin" exact component={AdminScreen} />
-
+          <Route path="/MyBookingScreen" exact component={MyBookingScreen}/>
           <Route path="/home" exact component={Homescreen} />
           <Route path="/HotelsScreen" exact component={OurHotelsScreen} />
           <Route path="/About" exact component={AboutScreen} />

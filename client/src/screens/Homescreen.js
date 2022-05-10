@@ -61,11 +61,14 @@ function Homescreen() {
          setError("Can't book rooms for more than 1 week")
        }
      
-      var tempRooms = [];
+      let tempRooms = [];
       for (const room of rooms) {
         var availability = false;
+   
+        
         if (room.currentbookings.length > 0) {
           for (const booking of room.currentbookings) {
+            
             if (
               !moment(moment(dates[0]).format("DD-MM-YYYY")).isBetween(
                 booking.fromdate,
@@ -76,6 +79,7 @@ function Homescreen() {
                 booking.todate
               )
             ) {
+          
               if (
                 moment(dates[0]).format("DD-MM-YYYY") !== booking.fromdate &&
                 moment(dates[0]).format("DD-MM-YYYY") !== booking.todate &&
@@ -83,16 +87,18 @@ function Homescreen() {
                 moment(dates[1]).format("DD-MM-YYYY") !== booking.todate
               ) {
                 availability = true;
+
               }
             }
           }
         }
-        //
+        console.log(availability == true || room.currentbookings.length == 0)
         if (availability == true || room.currentbookings.length == 0) {
           tempRooms.push(room);
         }
       }
       setRooms(tempRooms);
+      console.log(rooms);
     } catch (error) {}
   }
 
@@ -209,7 +215,9 @@ function Homescreen() {
               <option value="Double">Double</option>
             </select>
           </div>
+          <button className="btn btn-primary m-2" >Search</button>
         </div>
+        
       </div>
 
       <div className="row justify-content-center mt-5">

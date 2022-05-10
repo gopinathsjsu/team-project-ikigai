@@ -28,6 +28,9 @@ function Navbar() {
               <a className="dropdown-item" href="/profile">
                 Profile
               </a>
+              <a className="dropdown-item" href="/MyBookingScreen">
+                My Bookings
+              </a>
 
               <a className="dropdown-item" href="#" onClick={Logout}>
                 Logout
@@ -55,6 +58,7 @@ function Navbar() {
   };
 
   return (
+
     <div>
 
       <nav className="navbar navbar-expand-lg">
@@ -63,12 +67,13 @@ function Navbar() {
         </a>
         {/* Static Pages */}
         <a className="navbar-brand" href="/OurHotelsScreen">
+
           OUR HOTELS
         </a>
-        <a className="navbar-brand" href="/About">
+        <a className="navbar-brand" href="/About" style={{fontFamily: "Swiss-721"}}>
           ABOUT
         </a>
-        <a className="navbar-brand" href="/Contact">
+        <a className="navbar-brand" href="/Contact" style={{fontFamily: "Swiss-721"}}>
           CONTACT
         </a>
         <button
