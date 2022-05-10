@@ -19,15 +19,15 @@ function AdminScreen() {
   }, []);
 
   return (
-    <div className="ml-3 mt-3 mr-3 bs">
+    <div className="admin_screen" >
       <h1 className="text-center">Admin Panel</h1>
       <Tabs defaultActiveKey="1" onChange={callback}>
-        <TabPane tab="Bookings" key="1">
+        {/* <TabPane tab="Bookings" key="1">
           <AdminBookingScreen></AdminBookingScreen>
-        </TabPane>
-        <TabPane tab="Rooms" key="2">
+        </TabPane> */}
+        {/* <TabPane tab="Rooms" key="2">
           <AdminRoomScreen></AdminRoomScreen>
-        </TabPane>
+        </TabPane> */}
         <TabPane tab="Add Room" key="3">
           <AdminAddRoomScreen></AdminAddRoomScreen>
         </TabPane>
