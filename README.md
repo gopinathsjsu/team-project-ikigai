@@ -1,4 +1,4 @@
-# Hotel-Booking
+# ITC HOTEL
 
 MERN Stack Hotel Booking App
 
@@ -62,7 +62,7 @@ npm start
 
 ## Sprint Sheet:
 
-[Sprint Sheet for Hotel-Booking](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Sprint_Sheet.xlsx)
+[Sprint Sheet for Hotel-Booking](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Ikigai%20Sprint%20Task%20Sheet.xlsx)
 
 ## Project Journals:
 
