@@ -162,7 +162,7 @@ function Homescreen() {
             />
           </div>
 
-        <div className="col-md-4">
+        <div className="col-md-4" style={{marginTop:"15px"}}>
         <label for="location" className="fliteredDataLabel">Location</label>
             <select
               name="location"
@@ -184,7 +184,7 @@ function Homescreen() {
               <option value="Texas">Texas</option>
             </select>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4" style={{marginTop:"15px"}}>
           <label for="rooms">Date</label><br></br>
           <span style={{color:"red",fontWeight:"bolder",fontSize:"15px"}}>{error}</span>
             <RangePicker
@@ -195,7 +195,7 @@ function Homescreen() {
               // style={{ padding:"25px" }}
             />
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4" style={{marginTop:"15px"}}>
           <label for="rooms">Category</label>
             <select
               name="category"
