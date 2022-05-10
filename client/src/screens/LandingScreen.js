@@ -13,7 +13,12 @@ function LandingScreen() {
   const [error,setError]=useState("")
   function navigatehome(){
       if(login_user){
-        window.location.href = "/home"
+        console.log(login_user.isAdmin)
+        if(login_user.isAdmin){
+        window.location.href = "/admin"
+        }else{
+          window.location.href = "/Home"
+        }
       }else{
         setError("Please login")
       }
