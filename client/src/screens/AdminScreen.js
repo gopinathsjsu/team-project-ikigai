@@ -20,7 +20,7 @@ function AdminScreen() {
 
   return (
     <div className="admin_screen" >
-      <h1 className="text-center">Admin Panel</h1>
+      <h1 className="text-center" style={{fontWeight:"bold",fontSize:"20px"}}>Hotel Employee portal</h1>
       <Tabs defaultActiveKey="1" onChange={callback}>
         {/* <TabPane tab="Bookings" key="1">
           <AdminBookingScreen></AdminBookingScreen>
