@@ -107,7 +107,7 @@ h1 {
 	padding: 40px !important;
 	background-color: #f8f9fa !important;
 	margin: 20px;
-	height: 350px;
+	height: 370px;
 	cursor: pointer;
 }
 
@@ -402,5 +402,12 @@ p {
 	border: 3px solid black;
 }
 .bookings {
-	background-image: url("https://previews.123rf.com/images/topntp/topntp2003/topntp200302246/143088822-abstract-blur-and-defocused-luxury-hotel-lobby-for-background.jpg");
+	background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/MAALC/maalc-marina-pools-7902-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:100%;  /* responsive height */
 }
+
+
