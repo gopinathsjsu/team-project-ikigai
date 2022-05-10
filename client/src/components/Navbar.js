@@ -58,12 +58,16 @@ function Navbar() {
   };
 
   return (
-    <div style={{}}>
-      <nav className="navbar navbar-expand-lg" style={{}}>
+
+    <div>
+
+      <nav className="navbar navbar-expand-lg">
         <a className="navbar-brand" href="/" style={{fontFamily: "Swiss-721"}}>
           ITC HOTELS
         </a>
-        <a className="navbar-brand" href="/OurHotelsScreen" style={{fontFamily: "Swiss-721"}}>
+        {/* Static Pages */}
+        <a className="navbar-brand" href="/OurHotelsScreen">
+
           OUR HOTELS
         </a>
         <a className="navbar-brand" href="/About" style={{fontFamily: "Swiss-721"}}>

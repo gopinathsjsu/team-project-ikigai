@@ -60,8 +60,10 @@ function LoginScreen() {
                   setPassword(e.target.value);
                 }}
               />
+
+              {/* Loading functionality */}
               {loading ? (
-                <div>Login...Please Wait...</div>
+                <div>Login....Please Wait....</div>
               ) : (
                 <button className="btn btn-primary mt-3" onClick={Login}>
                   Login
