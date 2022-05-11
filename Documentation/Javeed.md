@@ -46,5 +46,9 @@ No blockers.
 
 Assisted in the integration of frontend and backend.
 
+### 2. What do I plan to do before the Demo Day?
+
+Validate all components. Work on Deployment. Check all functionalities in the working environment. Review all integrations.
+
 
 
