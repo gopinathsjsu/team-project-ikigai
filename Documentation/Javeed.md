@@ -30,3 +30,7 @@ No blockers.
 
 ## Sprint 3 (Week 3):
 
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Created remaining components in the client required for frontend. Finalized all pages to be part of the project. Completed basic documentation.
+
