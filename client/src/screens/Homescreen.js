@@ -186,7 +186,7 @@ function Homescreen() {
           </div>
           <div className="col-md-4" style={{marginTop:"15px"}}>
           <label for="rooms">Date</label><br></br>
-          <span style={{color:"red",fontWeight:"bolder",fontSize:"15px"}}>{error}</span>
+          
             <RangePicker
             disabledDate={(current) => {
               let customDate = moment().format("YYYY-MM-DD");
@@ -198,6 +198,9 @@ function Homescreen() {
               minDate={new Date()}
               // style={{ padding:"25px" }}
             />
+             <span style={{color:"red",fontWeight:"bolder",fontSize:"20px", marginTop:"5px;"}}>{error}</span>
+
+
           </div>
           <div className="col-md-4" style={{marginTop:"15px"}}>
           <label for="rooms">Category</label>
