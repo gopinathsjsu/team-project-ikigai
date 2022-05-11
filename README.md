@@ -25,11 +25,17 @@ MERN Stack Hotel Booking App
 
 Git Project Board
 
-## Team Members:
+### Area of Contribution
 
-- Ramya Mandapati - 016009994
-- Mohammad Javeed Snaganakal - 016043118
-- Vinay Kumar Reddy Seelam - 016040648
+Ramya:
+
+Javeed:
+
+Vinay:
+
+1. Developed Frontend for userprofile, Login & Registration and integrated with backend.
+2. Developed Frontend for Nav bar, Landing Screen and edit booking.
+3. Designed Wireframes and Architecture diagram
 
 ## Steps to test and run the application:
 
