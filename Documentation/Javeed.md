@@ -76,5 +76,14 @@ No blockers.
 
 Worked on styling and rooms displayed in the bookings section.
 
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Deploy ec2 instance
+
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+
 
 
