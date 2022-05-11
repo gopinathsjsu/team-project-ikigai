@@ -38,3 +38,9 @@ Created remaining components in the client required for frontend. Finalized all 
 
 Test pages with appropriate Request and Response. Make sure frontend and backend are synchronous with the same design logic. Review and integrate.
 
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+
+
