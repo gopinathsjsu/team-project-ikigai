@@ -13,3 +13,9 @@ Explore frontend technologies for implementation and decide the tech stack requi
 ### 3. What tasks blockers did I have?
 
 No blockers.
+
+## Sprint 2 (Week 2):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Finalized using React JS &  Material UI, and brushed up on the basic concepts. Created a client for the frontend.
