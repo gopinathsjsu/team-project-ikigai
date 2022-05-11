@@ -9,3 +9,7 @@ Read the project requirements, set up the GitHub project, Developement Environme
 ### 2. What do I plan to do before the next weekly Scrum meeting?
 
 Explore frontend technologies for implementation and decide the tech stack required for the project UI implementation.
+
+### 3. What tasks blockers did I have?
+
+No blockers.
