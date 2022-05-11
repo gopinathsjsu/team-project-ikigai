@@ -66,5 +66,15 @@ Check all functionalities in the working environment.
 Review all integrations.
 Distribute pending Praneeths components
 
+### 3. What tasks blockers did I have?
+
+No blockers.
+
+## Sprint 6 (Week 6):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Worked on styling and rooms displayed in the bookings section.
+
 
 
