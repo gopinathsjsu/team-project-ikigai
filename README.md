@@ -85,13 +85,24 @@ Find the [UI Wireframe](https://github.com/gopinathsjsu/team-project-ikigai/tree
 
 ## Design Decisions:
 
-### Architecture-Level
-
 ### Business-Level:
+
+The following are the features provided by the ITC Hotel :
 
 #### Admin Features:
 
+1. Login
+2. Add Room
+
 #### User Features:
+
+1. Register / Login
+2. Search Room
+3. Display Room
+4. Book Room
+5. Confirm Booking
+6. Edit Booking
+7. Cancel Booking
 
 ## Class Diagram
 
