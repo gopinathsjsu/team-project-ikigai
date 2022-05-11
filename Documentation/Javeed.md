@@ -19,3 +19,11 @@ No blockers.
 ### 1. What tasks did I work on since the last Scrum meeting?
 
 Finalized using React JS &  Material UI, and brushed up on the basic concepts. Created a client for the frontend.
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Develop basic pages. Set up components in the client. Start with basic documentation.
+
+### 3. What tasks blockers did I have?
+
+No blockers.
