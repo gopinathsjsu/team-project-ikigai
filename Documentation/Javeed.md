@@ -42,5 +42,9 @@ Test pages with appropriate Request and Response. Make sure frontend and backend
 
 No blockers.
 
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Assisted in the integration of frontend and backend.
+
 
 
