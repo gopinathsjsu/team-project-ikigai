@@ -59,5 +59,12 @@ waiting on praneeth rewards component as there is no response.
 
 Assisted in the integration of frontend and backend.
 
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Validate all pages. Work on Deployment.
+Check all functionalities in the working environment.
+Review all integrations.
+Distribute pending Praneeths components
+
 
 
