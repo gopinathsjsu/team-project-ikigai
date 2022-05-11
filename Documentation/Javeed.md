@@ -84,6 +84,15 @@ Deploy ec2 instance
 
 No blockers.
 
+## Sprint 6 (Week 6):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+### 3. What tasks blockers did I have?
+
+No blockers.
 
 
 
