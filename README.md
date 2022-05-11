@@ -114,4 +114,4 @@ The following are the features provided by the ITC Hotel :
 
 ## Deployment Diagram:
 
-![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Component%20Diagram.png)
+![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/DeploymentDiagram.PNG)
