@@ -27,3 +27,6 @@ Develop basic pages. Set up components in the client. Start with basic documenta
 ### 3. What tasks blockers did I have?
 
 No blockers.
+
+## Sprint 3 (Week 3):
+
