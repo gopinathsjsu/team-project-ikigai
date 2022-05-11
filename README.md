@@ -27,12 +27,14 @@ Git Project Board
 
 ### Area of Contribution
 
-Ramya:
+**Ramya:**
 
-Javeed:
+**Javeed:**
+1) Implemented frontend Hotels and rooms UI webpages features and integrated with backend.
+2) Worked on frontend for Room search, Admin Screen, Cancel Booking.
+3) Designed Deployment diagram and Component diagram.
 
-Vinay:
-
+**Vinay:**
 1. Developed Frontend for userprofile, Login & Registration and integrated with backend.
 2. Developed Frontend for Nav bar, Landing Screen and edit booking.
 3. Designed Wireframes and Architecture diagram
