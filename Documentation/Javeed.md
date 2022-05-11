@@ -53,5 +53,11 @@ Validate all components. Work on Deployment. Check all functionalities in the wo
 
 waiting on praneeth rewards component as there is no response.
 
+## Sprint 5 (Week 5):
+
+### 1. What tasks did I work on since the last Scrum meeting?
+
+Assisted in the integration of frontend and backend.
+
 
 
