@@ -34,3 +34,7 @@ No blockers.
 
 Created remaining components in the client required for frontend. Finalized all pages to be part of the project. Completed basic documentation.
 
+### 2. What do I plan to do before the next weekly Scrum meeting?
+
+Test pages with appropriate Request and Response. Make sure frontend and backend are synchronous with the same design logic. Review and integrate.
+
