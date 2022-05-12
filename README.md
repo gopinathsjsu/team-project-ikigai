@@ -33,6 +33,7 @@ Git Project Board
 3) Wrote all the User, Admin, Room and Booking API's
 4) Integrated the API's with frontend.
 5) Deployed the project in amazon EC2 cloud.
+6) Usecase diagram.
 
 **Javeed:**
 1) Implemented frontend Hotels and rooms UI webpages features and integrated with backend.
