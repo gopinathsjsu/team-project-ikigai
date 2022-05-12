@@ -9,6 +9,7 @@
     "antd": "^4.16.11",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
+    "http-proxy-middleware": "^2.0.6",
     "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -43,6 +44,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://8.222.23.211:5000/"
+  }
+
 }
