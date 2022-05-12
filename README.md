@@ -115,7 +115,7 @@ The following are the features provided by the ITC Hotel :
 
 ## Usecase Diagram
 
-![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/usecase.jpg)
+![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Usecase%20Diagram.png)
 
 ## Component Diagram:
 
