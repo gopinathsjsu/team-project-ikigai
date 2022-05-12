@@ -55,7 +55,7 @@ function Homescreen() {
       setFromDate(moment(dates[0]).format("DD-MM-YYYY"));
        setToDate(moment(dates[1]).format("DD-MM-YYYY"));
        var result=moment(dates[1]).diff(dates[0],'days');
-       
+       console.log(result);
        if(result>7)
        {
          setError("Can't book rooms for more than 1 week")
@@ -198,7 +198,7 @@ function Homescreen() {
               minDate={new Date()}
               // style={{ padding:"25px" }}
             />
-             <span style={{color:"red",fontWeight:"bolder",fontSize:"20px", marginTop:"5px;"}}>{error}</span>
+             {/* <span style={{color:"red",fontWeight:"bolder",fontSize:"20px", marginTop:"5px;"}}>{error}</span> */}
 
 
           </div>
