@@ -19,6 +19,7 @@ router.post("/getroombyid", async (req, res) => {
     const roomid = req.body.roomid;
     console.log("a"+roomid);
     const room = await Room.findOne({ _id: roomid });
+    console.log(room);
     res.send(room);
   } catch (error) {
     return res.status(400).json({ message: error });
