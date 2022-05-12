@@ -113,10 +113,6 @@ The following are the features provided by the ITC Hotel :
 6. Edit Booking
 7. Cancel Booking
 
-## Class Diagram
-
-[Sprint Sheet for Hotel-Booking]![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Class%20Diagram.png)
-
 ## Usecase Diagram
 
 ![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/usecase.jpg)
