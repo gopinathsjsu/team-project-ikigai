@@ -28,19 +28,22 @@ Git Project Board
 ### Area of Contribution
 
 **Ramya:**
-1) planned backend database structure
-2) created database and connected it to express.
-3) Wrote all the User, Admin, Room and Booking API's
-4) Integrated the API's with frontend.
-5) Deployed the project in amazon EC2 cloud.
-6) Usecase diagram.
+
+1. planned backend database structure
+2. created database and connected it to express.
+3. Wrote all the User, Admin, Room and Booking API's
+4. Integrated the API's with frontend.
+5. Deployed the project in amazon EC2 cloud.
+6. Usecase diagram.
 
 **Javeed:**
-1) Implemented frontend Hotels and rooms UI webpages features and integrated with backend.
-2) Worked on frontend for Room search, Admin Screen, Cancel Booking.
-3) Designed Deployment diagram and Component diagram.
+
+1. Implemented frontend Hotels and rooms UI webpages features and integrated with backend.
+2. Worked on frontend for Room search, Admin Screen, Cancel Booking.
+3. Designed Deployment diagram and Component diagram.
 
 **Vinay:**
+
 1. Developed Frontend for userprofile, Login & Registration and integrated with backend.
 2. Developed Frontend for Nav bar, Landing Screen and edit booking.
 3. Designed Wireframes and Architecture diagram
@@ -112,7 +115,11 @@ The following are the features provided by the ITC Hotel :
 
 ## Class Diagram
 
-![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Class%20Diagram.png)
+[Sprint Sheet for Hotel-Booking]![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Class%20Diagram.png)
+
+## Usecase Diagram
+
+![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/usecase.jpg)
 
 ## Component Diagram:
 
