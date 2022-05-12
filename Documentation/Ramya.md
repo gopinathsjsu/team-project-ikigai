@@ -77,7 +77,7 @@ No blockers.
 
 ### 1. What tasks did I work on since the last Scrum meeting?
 
-Worked on extra pricing and rewards.
+Worked on extra pricing and rewards components
 
 ### 2. What do I plan to do before the next weekly Scrum meeting?
 
@@ -91,7 +91,11 @@ No blockers.
 
 ### 1. What tasks did I work on since the last Scrum meeting?
 
+working on deployment
+
 ### 2. What do I plan to do before the next weekly Scrum meeting?
+
+complete deployment
 
 ### 3. What tasks blockers did I have?
 
