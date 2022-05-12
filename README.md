@@ -25,11 +25,19 @@ MERN Stack Hotel Booking App
 
 Git Project Board
 
-## Team Members:
+### Area of Contribution
 
-- Ramya Mandapati - 016009994
-- Mohammad Javeed Snaganakal - 016043118
-- Vinay Kumar Reddy Seelam - 016040648
+**Ramya:**
+
+**Javeed:**
+1) Implemented frontend Hotels and rooms UI webpages features and integrated with backend.
+2) Worked on frontend for Room search, Admin Screen, Cancel Booking.
+3) Designed Deployment diagram and Component diagram.
+
+**Vinay:**
+1. Developed Frontend for userprofile, Login & Registration and integrated with backend.
+2. Developed Frontend for Nav bar, Landing Screen and edit booking.
+3. Designed Wireframes and Architecture diagram
 
 ## Steps to test and run the application:
 
@@ -77,13 +85,24 @@ Find the [UI Wireframe](https://github.com/gopinathsjsu/team-project-ikigai/tree
 
 ## Design Decisions:
 
-### Architecture-Level
-
 ### Business-Level:
+
+The following are the features provided by the ITC Hotel :
 
 #### Admin Features:
 
+1. Login
+2. Add Room
+
 #### User Features:
+
+1. Register / Login
+2. Search Room
+3. Display Room
+4. Book Room
+5. Confirm Booking
+6. Edit Booking
+7. Cancel Booking
 
 ## Class Diagram
 
@@ -94,3 +113,5 @@ Find the [UI Wireframe](https://github.com/gopinathsjsu/team-project-ikigai/tree
 ![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/Component%20Diagram.png)
 
 ## Deployment Diagram:
+
+![image](https://github.com/gopinathsjsu/team-project-ikigai/blob/main/Documentation/DeploymentDiagram.PNG)

@@ -36,6 +36,7 @@ router.post("/login", async (req, res) => {
 });
 router.get("/getuserbyid/:id",async(req,res)=>{
   try{
+    console.log("inside user");
     console.log("r"+req.params.id);
     const filter={_id:req.params.id};
     const user= await User.findOne( filter );
@@ -59,6 +60,7 @@ router.put("/editRewards/:id", async(req,res) =>{
   try{
     console.log("inside edit");
     filter={_id:req.params.id}
+    console.log(req.body.rewards);
     if(req.body.rewards==true){
     update={rewardPoints:10};
   }

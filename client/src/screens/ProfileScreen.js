@@ -57,7 +57,7 @@ function ProfileScreen() {
                 </div>
               </div>
               </div>
-              <div class="_s50zru" style={{marginTop:"20px"}}>
+              {/* <div class="_s50zru" style={{marginTop:"20px"}}>
               <div id="legalName" aria-disabled="false" role="group" aria-labelledby="legalName-row-title" class="rcem0st dir dir-ltr">
                   <div class="_jro6t0">
                     <div class="_37qdzt">
@@ -71,7 +71,7 @@ function ProfileScreen() {
                 </div>
               </div>
 
-            </div>
+            </div> */}
              
                 
                 <p> </p>
