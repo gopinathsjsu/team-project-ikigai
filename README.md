@@ -40,13 +40,15 @@ Git Project Board
 
 1. Implemented frontend Hotels and rooms UI webpages features and integrated with backend.
 2. Worked on frontend for Room search, Admin Screen, Cancel Booking.
-3. Designed Deployment diagram and Component diagram.
+3. Designed and developed user api.
+4. Designed Deployment diagram and Component diagram.
 
 **Vinay:**
 
 1. Developed Frontend for userprofile, Login & Registration and integrated with backend.
 2. Developed Frontend for Nav bar, Landing Screen and edit booking.
-3. Designed Wireframes and Architecture diagram
+3. Designed and developed login and register api.
+4. Designed Wireframes and Architecture diagram
 
 ## Steps to test and run the application:
 
