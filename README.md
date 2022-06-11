@@ -61,6 +61,7 @@ git clone https://github.com/gopinathsjsu/team-project-ikigai
 2. Go to 'server' repository
 
 ```
+cd server
 npm install
 npm start
 ```
@@ -68,6 +69,7 @@ npm start
 3. Go to 'client' repository
 
 ```
+cd client
 npm install
 npm start
 ```
